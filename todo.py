@@ -6,7 +6,7 @@ todos = [
 
 def show_todos():
     print("TODO一覧")
-    print("優先度")
+    print("優先度 (高・中・低)" )
 
     print("未完了のTODO")
     for todo in todos:
