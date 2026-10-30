@@ -6,17 +6,12 @@ todos = [
 
 def show_todos():
     print("TODO一覧")
-    print("優先度 (高・中・低)" )
+    print("状態と優先度")
 
-    print("未完了のTODO")
+    print("すべてのTODO")
     for todo in todos:
-        if not todo["completed"]:
-            print(f'- {todo["title"]} [{todo["priority"]}]')
-
-    print("完了したTODO")
-    for todo in todos:
-        if todo["completed"]:
-            print(f'- {todo["title"]} [{todo["priority"]}]')
+        status = "[完了] " if todo["completed"] else ""
+        print(f'{status}{todo["title"]} [{todo["priority"]}]')
 
 
 show_todos()
