@@ -6,7 +6,7 @@ todos = [
 
 def show_todos():
     print("TODO一覧")
-    print("状態と優先度")
+    print("状態と優先度：高・中・低")
 
     print(f"すべてのTODO({len(todos)}件)")
     for todo in todos:
